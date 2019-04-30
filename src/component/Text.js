@@ -68,7 +68,7 @@ class Text extends Component {
       if (needCalculate) {
         const wordWidths = calculateWordWidths(props);
 
-        if (wordWidths) {
+        if (wordWidths && wordWidths.wordsWithComputedWidth) {
           const { wordsWithComputedWidth, spaceWidth } = wordWidths;
 
           this.wordsWithComputedWidth = wordsWithComputedWidth;
